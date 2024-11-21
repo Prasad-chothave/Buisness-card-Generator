@@ -1,0 +1,157 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* Modern font */
+    background: #000;
+    /* Black background for the dark theme */
+    color: #eaeaea;
+    /* Light text color for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    /* Pure white heading */
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* Bold heading */
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.2);
+    /* Glow effect */
+}
+
+.form {
+    background: #1a1a1a;
+    /* Dark gray background */
+    padding: 30px;
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    /* Subtle white shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #eaeaea;
+    font-weight: 500;
+    /* Medium weight for labels */
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    /* Subtle border */
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #2a2a2a;
+    /* Darker input background */
+    color: #eaeaea;
+    /* Light input text */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    /* Blue focus highlight */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    /* Vibrant blue gradient */
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* Semi-bold buttons */
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d82);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+.business-card {
+    display: none;
+    background: #121212;
+    /* Dark blackish-gray for the card */
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: left;
+    /* Left-aligned text */
+}
+
+.business-card h2 {
+    color: #fff;
+    /* Bright white for the name */
+    font-size: 2rem;
+    font-weight: 700;
+    /* Bold name */
+    margin-bottom: 10px;
+}
+
+.business-card p {
+    color: #ccc;
+    /* Softer gray for contact text */
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.business-card a {
+    text-decoration: none;
+    color: #007bff;
+    /* Vibrant blue for the link */
+    font-weight: 600;
+    /* Semi-bold for emphasis */
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.business-card a:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+}
+
+canvas {
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the QR code */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

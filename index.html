@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Digital Business Card Generator</h1>
+
+        <!-- Input Form -->
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" placeholder="Enter your contact number">
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" placeholder="Enter your website">
+
+            <button id="generate-btn">Generate Business Card</button>
+        </div>
+
+        <!-- Business Card Display -->
+        <div class="business-card" id="business-card">
+            <h2 id="card-name"></h2>
+            <p id="card-contact"></p>
+            <a href="#" id="card-website" target="_blank"></a>
+            <canvas id="qr-code"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
